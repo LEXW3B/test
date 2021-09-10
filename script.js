@@ -1,6 +1,6 @@
 (function(){
     'use strict'
-    console.log(alert)
+    alert('segundo js')
     console.log('meu primeiro code de js')
 
 })()
