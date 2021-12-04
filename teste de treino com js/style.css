@@ -1,0 +1,96 @@
+/*zerar tudo*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*menu*/
+nav{
+    background-color: rgb(71, 71, 119);
+    
+    height: 2rem;
+    text-align: center;
+    max-width: 100%;
+}
+nav ul{
+    list-style: none; 
+    position: relative; 
+    top: -2.1rem;  
+}
+nav ul li{
+    display: inline;
+    margin: 1rem;
+}
+nav ul li a{
+    color: rgb(240, 239, 239);
+    padding: 1,25rem;
+    text-decoration: none;
+    position: relative;
+    top: -.2rem;
+    
+}nav ul li a:hover{
+    color: red;
+}
+/*logo*/
+.logo{
+    text-align: left;
+    top: -2px;
+    max-width: 5rem;
+    
+}
+.logo0{
+    max-width: 5rem;
+    position: relative;
+    top: .3rem;
+    left: 2rem;
+}
+.logo1{
+    color: black;
+    
+}
+.logo2{
+    color: red;
+}
+/*texto*/
+.txt1{
+    height: 15rem;
+    width: 15rem;
+    float: left;
+    background: yellow;
+}
+.txt2{
+    height: 15rem;
+    width: 15rem;
+    float: right;
+    background: green;
+}
+/*botão*/
+div input{
+    position: relative;
+    left: 35rem;
+    top: 2rem;
+}
+.dark{
+    background: black;
+}
+/*rodape*/
+footer{
+    height: 3rem;
+    width: 100%;
+    background: gray;
+    bottom: 0;
+    position: fixed;
+    
+}
+footer p{
+    text-align: center;
+    display: inline;
+    position: relative;
+    left: 27rem;
+    top: 1rem;
+    padding: 2rem;
+}
+
+
