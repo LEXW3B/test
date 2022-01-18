@@ -14,14 +14,17 @@
 
     <script>
         function verificar(){
+            var origem = 'Brasil'
             var p = window.document.getElementById('pais')
-            var pais = 'Brasil'
-            res.innerHTML = `Seu país de origem é ${pais}`
-                if (p == Brasil){
-                    res.innerText += `Você é brasileiro!`
-                }else{res.innerText += `Você é estrangeiro.`}
-
+            var r = window.document.getElementById('res')
+            
+            r.innerHTML = `Seu país de origem é ${p}`
+            
+                if (r == origem){
+                    r.innerText = "Você é brasileiro!"
+                }else{r.innerText = "Você é estrangeiro."}
         }
+        
     </script>
 </body>
 </html>
