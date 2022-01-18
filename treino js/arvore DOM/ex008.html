@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Exercicio Eventos</title>
+    <style>
+        body{
+            margin: 2rem;
+        }
+        #res{
+            margin-top: 20px;
+        }
+        #btn{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Crie os dois campos chamados "inputValorA" e "inputValorB" -->
+    <fieldset  style="background: green;" style="width: 100px;">
+        <label for="inputValorA">Valor de A:</label>
+        <input style="background: yellow;" id="inputValorA" type="number" placeholder="Digite o valor de A">
+    </fieldset>   
+
+    <p>+</p>
+
+    <fieldset  style="background: green;" style="width: 100px;">
+        <label for="inputValorB">Valor de B:</label>
+        <input style="background: yellow;" id="inputValorB" type="number" placeholder="Digite o valor de B">
+    </fieldset>
+   
+    <!-- Criar um botão chamado SOMAR -->
+    <input id="btn" type="button" value="Somar" onclick="somar()">
+    <div  style="background: red;" id="res">Resultado: </div>
+        
+    
+    <script>
+
+        function somar(){
+
+            var primeiroValor = window.document.getElementById('inputValorA')
+            var segundoValor  = window.document.getElementById('inputValorB')
+            var n1 = Number(primeiroValor.value)
+            var n2 = Number(segundoValor.value)
+            var s = n1 + n2
+
+            var res = window.document.getElementById('res')
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`
+        }
+    </script>
+</body>
+</html>
