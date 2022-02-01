@@ -9,7 +9,3 @@ function parimp(n){
 }
 let resp = parimp(12)
 console.log(resp)
-
-
-
-
