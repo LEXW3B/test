@@ -37,7 +37,14 @@ console.log(n8 <= n7)
 console.log(10 != n7)
 console.log(n7 !== "10")
 
-
-
+//OPERADORES LOGICOS
+/*
+para uma pessoa viajar para o exterior precisa ser maior de 18 anos ou acompanhado com os pais e ter comprado o bilhete.
+*/
+let idade = 18;
+let paisPresentes = true;
+let comprouBilhete = false;
+const podeViajar = idade >= 18 || paisPresentes && comprouBilhete;
+console.log(`Pode viajar: ${podeViajar}`)
 
 
