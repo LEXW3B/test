@@ -23,6 +23,20 @@ let i = 0
 console.log(i)
 
 //OPERADORES DE COMPARAÇÃO
+/*
+igualdade de valor ==
+igualdade de valor e tipo ===
+<, >, <=, >=
+!= valores diferentes
+!== valores e tipos diferentes
+*/
+let n7 = 10
+let n8 = 1
+console.log(n7 == '10')
+console.log(n8 <= n7)
+console.log(10 != n7)
+console.log(n7 !== "10")
+
 
 
 
