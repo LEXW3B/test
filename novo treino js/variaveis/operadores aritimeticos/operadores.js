@@ -16,8 +16,13 @@ let n3 = 20;
 n3 %= 2  //resto da divisão
 console.log(n3)
 
+//OPERADORES DE INCREMENTO E DECREMENTO
 
+let i = 0
+++i
+console.log(i)
 
+//OPERADORES DE COMPARAÇÃO
 
 
 
