@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Eventos</title>
+    <style>
+        div#area{
+            background: rgb(42, 139, 42);
+            color:white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- poderia por depois do area, onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()" mas para nao poluir o html foi tirado. -->
+    <div id="area">
+        Interaja...
+    </div>
+
+
+    <script>
+        //A ligação do html ao Js fica a cargo do addEventListner
+        let a = window.document.getElementById('area');
+        a.addEventListner('click', clicar)
+        a.addEventListner('mouseenter', entrar)
+        a.addEventListner('mouseout', sair)
+        
+        function clicar(){
+            a.innerText = 'Clicou!!!'
+            a.style.background = 'black'
+            a.style.color = 'yellow'
+        }
+        function entrar(){
+            //let a = window.document.getElementById('area');
+            a.innerText = 'Entrou!!!'
+            a.style.background = 'red'
+            a.style.color = 'blue'
+        }
+        function sair(){
+            //let a = window.document.getElementById('area');
+            a.innerText = 'saiu!!!'
+            a.style.background = 'grey'
+            a.style.color = 'green'
+        }
+
+    </script>
+    
+</body>
+</html>
