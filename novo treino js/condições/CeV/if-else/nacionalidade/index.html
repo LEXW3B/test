@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nacionalidade</title>
+  </head>
+  <body>
+    <h1>Sistema de nacionalidade</h1>
+
+    <div id="sistema">
+      Qual o seu país de origem:
+      <input type="text" name="" id="origem" placeholder="Nome do país" />
+      <input type="button" value="ir" onclick="paisOrigem()" />
+      <div id="resposta"></div>
+    </div>
+
+    <script>
+      function paisOrigem() {
+        'use strict'
+        const origem = document.querySelector('#origem')
+        const resp = document.querySelector('#resposta')
+        let name = origem.value
+        resp.innerHTML += `O seu país de origem é ${name}`
+        
+        if (name == Brasil || brasil || brazil || Brazil) {
+            resp.innerHTML += `Você é brasileiro!!!`
+        } else {
+            resp.innerHTML += `Você é estrangeiro.`
+        }
+      }
+    </script>
+  </body>
+</html>
