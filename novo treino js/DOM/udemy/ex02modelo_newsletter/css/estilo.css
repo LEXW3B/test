@@ -27,14 +27,18 @@ body{
 }
 #newsletterForm input,
 #newsletterForm button{
-    font-size: 1em;
+    /*font-size: 1em;*/
     padding: .5em;
     border: none;
 }
 #newsletterForm button{
-    background-color: #70757b;
+    font-size: .6em;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
 }
 #newsletterForm input{
+    font-size: 1em;
     background-color: #9f9f9f;
 }
 #newsletterForm label{

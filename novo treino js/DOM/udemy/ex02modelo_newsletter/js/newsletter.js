@@ -1,11 +1,16 @@
 
-const txtEmail = document.querySelector('input#txtEmail')
-const msgFeedback = document.getElementById('newsletterFeedback')
+const txtEmail = document.getElementById('txtEmail');
 
-function cadastrarEmail(){
-    let email = txtEmail.value
-    msgFeedback.innerHTML=`O e-mail ${email} foi cadastrado com sucesso`
+
+
+function editarEmail(){
+    txtEmail.disabled = 'false'
+    txtEmail.focus()
 }
+function disableEmail(){
+    txtEmail.disabled = true
+}
+
 
 
 
