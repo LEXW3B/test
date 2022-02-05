@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkbox</title>
+</head>
+<body>
+    <h1 id="title1">Corso de Javascript</h1>
+
+    <main id="cmain" class="idmain">
+        <h2>Subtitulo</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    </main>
+
+    <form action="#">
+        <input type="text" id="txtNome" placeholder="nome"><br><br> 
+        <input type="text" id="txtEmail" placeholder="email"><br><br> 
+        
+        <input type="checkbox" id="contrato" onclick="enable()">
+        <label for="contrato">Li e aceito o seguinte contrato.
+        </label><br><br>      
+        <textarea name="" id="" cols="30" rows="10" readonly>
+            Este contrato nos da direito á ...
+        </textarea><br><br>
+        <input  id="onOff" type="submit" value="cadastrar" disabled>
+    </form>
+<!-- quando clicar no checkbox e para habilitar o botão de cadastrar -->
+    <script>
+        //document.getElementById('contrato').checked = true
+
+        function enable(){
+            const contrato = document.getElementById('contrato')
+            const habilitarBtn = document.querySelector('form input[type=submit]')
+            let checado = contrato.checked
+
+            //if(checado){
+            //    habilitarBtn.disabled = false
+            //}else{
+            //    habilitarBtn.disabled = true
+            //}  OU
+
+            habilitarBtn.disabled = !checado
+
+            
+        }
+        
+
+    </script>  
+  <!--criar uma variavel para entar no id do input cadastrar e retirar o disabled  -->
+</body>
+</html>
