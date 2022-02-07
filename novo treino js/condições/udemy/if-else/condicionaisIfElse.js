@@ -1,10 +1,26 @@
 
-let idade = 17
+let idade = 18
 let paisPresentes = false
 let comprouBilhete = true
 const podeViajar = (idade >= 12 || paisPresentes) && comprouBilhete
-
 console.log(`Pode viajar: ${podeViajar}`)
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// operador ternário usado quado se tem apenas duas respostas
+
+// let msgMaiorIdade = " "
+// if(msgMaiorIdade >= 18){
+//     msgMaiorIdade = 'É maior de idade.'
+// }else{
+//     msgMaiorIdade = 'É menor de 18 anos.'
+// }   OU
+let msgMaiorIdade = (idade>=18) ? "É maior de idade porra." : "É menor de 18 anos seu ze-arruela."
+console.log(msgMaiorIdade)
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
 if(!comprouBilhete){
     console.log(`Não comprou o bilhete.`)
 }else{
