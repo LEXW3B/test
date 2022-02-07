@@ -6,7 +6,7 @@ console.log(n)
 
 let isValid = false
 //isValid&&console.log('É valido')
-isValid||console.log('É válido')
+isValid||console.log('Não é válido')
 
 //usando método ternário
 let ternário = (n===0)?`false`:`thuthy`
