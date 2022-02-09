@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    
+
+
+    <script>
+        window.document.body.style.background = 'black'
+        window.document.body.style.color = 'white'
+        let numero = prompt('Digite um número: ')
+
+        let indice = 1
+        while (indice <= 10) {
+            document.write(`<p>${indice} x ${numero} = ${(indice*numero)}</p>`)
+            indice++
+        }
+        document.write('Saiu do loop!')
+
+    </script>
+</body>
+</html>
