@@ -18,6 +18,8 @@ section{
     text-align: left;
 }#resp {
     text-align: left;
+}select{
+    width: 150px;
 }
 div{
     text-align: center;
