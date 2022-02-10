@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+<body>
+    <header>
+        <h1>Funções - Tabuada</h1>
+    </header>
+
+    <section>
+        <p>
+            <input type="number" name="tab" id="input" placeholder="Digite um número:">
+            <button onclick="mostrarTabuada()">Mostrar Tabuada</button>
+            <button onclick="limparTabuada()">Limpar Tabuada</button>
+        </p>
+        <div id="output"></div>
+    </section>
+    
+    <script>
+        const output = document.getElementById('output')
+        let input = document.getElementById('input')
+
+        function mostrarTabuada () {
+            let num = parseFloat(input.value)
+            let msg = ''
+            for (c = 1; c <= num; c++) {
+                msg += `<p>${c} + ${num} = ${c+num}</p>`
+            }
+            output.innerHTML = msg
+        }
+
+        function limparTabuada () {
+            output.innerText = ' '
+        }
+        
+
+    </script>
+</body>
+</html>
