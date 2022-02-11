@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivs & Thalles</title>
+    
+</head>
+<body>
+    <header>
+        <h1>
+            <p>
+                Deu Nao Deu Niv's ?
+            </p>
+        </h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                Se deu digite 1, se não digite 2:
+                <input 
+                    type="number" name="numero" id="num" placeholder="Digite aqui seu bosta: "
+                >
+                <input type="button" value="E ai?" onclick="deuNaoDeu()">
+            </p>
+        </div>
+        <div id="resp"></div>
+    </section>
+    <script> 
+        document.body.style.background = 'black'       
+        document.body.style.color = 'white'       
+        function deuNaoDeu () {
+            let num = document.querySelector('#num')
+            let n = parseFloat(num.value)
+            if (n===1){
+                resp.innerHTML += `<p>Tá assado né nivs.</p>`
+            }else{
+                resp.innerHTML += `<p>Ele não deu.</P>`
+            }
+        }
+    </script>
+</body>
+</html>
