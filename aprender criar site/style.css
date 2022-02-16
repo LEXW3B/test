@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    height: 0;
+    display: flexbox;
+
+}
+header{
+    width: 75.9rem;
+    height: 3rem;
+    padding: 0;
+    text-decoration: black;
+}
+header div{
+    background: black;
+    color: white;
+    height: 3rem;
+    text-align: center;
+    display: flexbox;
+    width: 30%;
+    text-decoration: black;
+
+}
+header nav{
+    background: red;
+    color: white;
+    height: 3rem;
+    text-align: center;
+    display: flex;
+    width: 70%;
+    float: right;
+    margin-top: -3rem;
+    text-decoration: black;
+}
+section{
+    background: rgb(85, 85, 212);
+    color: white;
+    height: 15rem;
+    width: 75.9rem;
+    text-align: center;
+    display: flexbox;
+}
+main{
+    height: 12rem;
+    width: 75.7rem;
+    text-align: center;
+    background: rgb(10, 4, 44);
+    color: white;
+    display: block;
+}
+main img{
+    background: rgb(146, 161, 142);
+    width: 17rem;
+    height: 6rem;
+    float: right;
+
+}
+main p{
+    background: rgb(24, 161, 142);
+    width: 17rem;
+    height: 6rem;
+    float: right;
+    margin-top: -5.1rem;
+
+}
+#content{/*olhar esse e o quadrado branco*/
+    background: white;
+    width: 9rem;
+    height: 10rem;    
+    display: flexbox;
+    left: 8rem;
+    margin-right: 0;
+
+}
+footer{
+    height: 4rem;
+    width: 75.9rem;
+    background: rgb(212, 212, 107);
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
